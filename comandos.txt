@@ -1,0 +1,37 @@
+//Crear aplicación 
+ng new my-first-project
+
+//iniciar servidor 
+ng serve
+
+//generar componente
+ng generate component carpeta/componente //puedes crearlo en las carpetas que sea nacesario
+//también se puede resumir así 
+ng g c carpeta/componente
+//ejemplo 
+ng g c proyectos/listado
+//si no quieres los archivos de pruebas los puedes omitir
+ng g c proyectos/listado --skipTests
+
+//para que no te agregue el archivo de css
+ng g c proyectos/listado --skipTests -is
+
+//generar un modulo
+ng generate module nombreModulo
+//resumido
+ng g m proyectos //siempre te genera el modulo o componente en una carpeta con el mismo nombre
+
+//generar modulo con archivo de rutas
+ng g m proyecto --routing
+
+//generar versión de producción
+ng build --prod
+
+//generar pipe
+ng g pipe /carpeta/nombre --skipTests
+
+//generar archivo de rutas 
+ng g m appRouting --flat //el --flat es para que no genere un directorio, esto aplica para cualquier componente
+
+//generar un guard
+ng g guard carpeta/nombre
